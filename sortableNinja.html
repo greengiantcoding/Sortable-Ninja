@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sortable Ninja</title>
+	<link rel="stylesheet" href="jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="sortableNinja.css">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script>
+		$(function(){
+			$('#sortList').sortable({
+				placeholder: "ui-state-highlight"
+			});
+			$('#sortList').disableSelection();
+		});
+	</script>
+</head>
+<body>
+	<ul id="sortList">
+		<li class="ui-state-default"><img src="sort1.bmp"></li>
+		<li class="ui-state-default"><img src="sort2.bmp"></li>
+		<li class="ui-state-default"><img src="sort3.bmp"></li>
+		<li class="ui-state-default"><img src="sort4.bmp"></li>
+		<li class="ui-state-default"><img src="sort5.bmp"></li>
+	</ul>
+</body>
+</html>
